@@ -19,7 +19,7 @@
     border-radius: 15px;
     margin-bottom: 1%;
     height: 10%;
-    min-width:50%;
+    min-width:30%;
     border: solid 1px;
     background:transparent;
     box-shadow:  2px 5px black;
@@ -31,10 +31,10 @@
   border-radius: 15px;
   margin-bottom: 1%;
   height: 10%;
-  width:30%;
+  min-width:30%;
   border: solid 1px;
   background:transparent;
-  box-shadow:  2px 5px purple;
+  box-shadow:  2px 5px #399992;
 
 }
 

@@ -1,22 +1,44 @@
-.hello {
-    overflow: hidden;
-    background-color: #791cf8;
-    padding: 20px 10px;
-    text-align: center;
-    
-    }
-    .box {
-      display: flex;
-    }
+footer {
+  overflow: hidden;
+  background-color: #323232;
+  padding: 20px 10px;
+  text-align: center;
+  bottom: 0;
+}
 
-    .one {
-      flex: 1;
-    }
+hr {
+  width: 60%;
+  color: red;
+  background-color: red;
+  border-color: #399992;
+}
 
-    .two {
-      flex: 1;
-    }
+.box {
+  display: flex;
+}
 
-    .three {
-      flex: 1;
-    }
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 1;
+}
+
+.three {
+  flex: 1;
+}
+
+#titre {
+  margin: 0;
+  font-size: larger;
+  color: #fff;
+}
+
+#info {
+  color: white
+}
+
+#info:hover {
+  color: #399992
+}

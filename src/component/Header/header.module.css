@@ -1,13 +1,13 @@
 .hello {
     overflow: hidden;
-    background-color: #791cf8;
+    background-color: #323232;
     padding: 20px 10px;
     
     }
     .Boss {
       float: right;
       color:white;
-      background-color: #791cf8; 
+      background-color: #323232; 
       text-align: center;
       width: 75px;
       border-radius: 23%;
@@ -15,8 +15,8 @@
     }
     .Boss:hover {
       float: right;
-      color:#791cf8;
-      background-color: white; 
+      color:#323232;
+      background-color: #399992; 
       text-align: center;
       width: 75px;
       border-radius: 23%;
