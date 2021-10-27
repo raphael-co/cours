@@ -1,0 +1,22 @@
+.input{
+    padding: 5%;
+    margin-top: 7%;
+    border: 1px dashed #791cf8;
+    width:80%;
+    outline: none;
+}
+.inputtrue:focus{
+    padding: 5%;
+    margin-top: 7%;
+    border: 1px dashed #791cf8;
+    width:80%;
+    background-color: aqua;
+}
+
+.inputfalse:focus{
+    padding: 5%;
+    margin-top: 7%;
+    border: 1px dashed #791cf8;
+    width:80%;
+    background-color: aqua;
+}

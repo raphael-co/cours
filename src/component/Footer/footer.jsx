@@ -1,15 +1,21 @@
 import style from './footer.module.css'
+// import PropTypes from 'prop-types'
 
-function Footer() {
-
+export default function Footer(backgroundColor,...props) {
+    // console.log(args)
     return (
 
 
 
-        <footer className={style.hello}>
+        // <footer className={style.hello}>
+        <footer className={style.hello}
+        style={backgroundColor && {backgroundColor}}
+        >
             <div className={style.box}>
                 <div className={style.one}>
-                    <h5>titre 1</h5>
+                    <h5
+                    //  style={args.footer}
+                     >titre 1</h5>
                     <p>lorem ipsum dolor</p>
                     <p>lorem ipsum dolor</p>
                     <p>lorem ipsum dolor</p>
@@ -31,4 +37,11 @@ function Footer() {
 
     )
 }
-export default Footer;
+
+// Footer.propTypes = {
+//     backgroundColor : PropTypes.string,
+// }
+
+// Footer.defaultProps = {
+//     backgroundColor:null,
+// }

@@ -1,0 +1,13 @@
+/* .Boss2{
+    padding-top:3%;
+    padding-left: 10%;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin: 0;
+} */
+  .two {
+    margin-top: 4.5%;
+
+    flex: 1 1 auto;
+  }

@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Hello from './component/hello.jsx'
+// import Hello from './component/hello.jsx'
 import Header from './component/Header/header.jsx'
 import Footer from './component/Footer/footer.jsx'
-import Chest from './component/Chest/chest.jsx'
+import Body from './component/body/body.jsx'
+
+
 
 
 
@@ -11,13 +13,9 @@ import Chest from './component/Chest/chest.jsx'
 function App() {
   return (
     <div className="App">
-  
         <Header></Header>
-        <Chest></Chest>
+        <Body></Body>
         <Footer></Footer>
-
-
-
     </div>
   );
 }

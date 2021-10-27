@@ -1,17 +1,31 @@
+import React, { useState } from "react";
 import style from './chest.module.css'
+import Checkbox from '../Checkbox/chekbox.jsx'
 
-function Chest() {
+function Chest({ nameChest}) {
+
+
+  // className={style.ligne}
+  const [checked, setChecked] = useState(false)
+  const test = (t) => {
+    setChecked(t)
+  }
   return (
     <div className={style.body}>
 
 
-      <div className={style.ligne}>
+      {/* className={checked == false ? `${style.ligne}` : ''} */}
+      {/* <div className={style.ligne `${checked == false? `${style.ligne}` : ""}`}></div> */}
+      <div className={checked === false ? `${style.ligne}` : `${style.ligneTrue}`}>
         <div className={style.box}>
-          <div className={style.two}> <input className={style.Boss} type="checkbox"></input></div>
-
+          {/* <div className={style.two}> <input className={style.Boss} type="checkbox"></input></div> */}
+          <Checkbox
+            test1={test}
+            value={checked}
+          />
           <div className={style.one}>
             <h5 className={style.Boss2}>Hello Friend</h5>
-            <p className={style.Boss2}>lorem ipsum d</p>
+            <p className={style.Boss2}>{nameChest.name}</p>
           </div>
         </div>
 
