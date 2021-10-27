@@ -23,18 +23,17 @@ function Body() {
         "name": name
     }
 
+    const tableau = tabName
+
     const ActionNameEnvoie = (t) => {
         setActionName(t)
-        console.log(name)
         if (name.length >= 2) {
-            tabName.push(jsonName)
+            tableau.push(jsonName)
+            setTabName(tableau)
         } else {
             console.log("encore")
         }
     }
-
-   
-    console.log(tabName)
 
     return (
         <div className={style.body}>
@@ -44,7 +43,7 @@ function Body() {
                 value={actionName}
                 envoie1={envoie}
                 // eslint-disable-next-line
-                value={name}
+                name1={name}
             />
             <br />
             <ListChest

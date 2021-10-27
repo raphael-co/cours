@@ -2,7 +2,6 @@ import style from './footer.module.css'
 // import PropTypes from 'prop-types'
 
 export default function Footer(backgroundColor,...props) {
-    // console.log(args)
     return (
 
 

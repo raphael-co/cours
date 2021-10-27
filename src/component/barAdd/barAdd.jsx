@@ -26,7 +26,7 @@ function BarAdd({ envoie1, name, ActionNameEnvoie1, ActionName }) {
                     <div className={style.one}>
                         <Textfield
                             textenvoie1={textenvoie}
-                            value={name}
+                            nam2={name}
                         />
                     </div>
                 </div>
@@ -47,7 +47,6 @@ function BarAdd({ envoie1, name, ActionNameEnvoie1, ActionName }) {
 //     const test = (t) => {
 //       setChecked(t)
 //     }
-//   console.log(checked)
 
 //     return (
 //       <div className={style.body}>

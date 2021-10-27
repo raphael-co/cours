@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import style from './chest.module.css'
 import Checkbox from '../Checkbox/chekbox.jsx'
 
-function Chest({ nameChest}) {
+function Chest({ nameChest }) {
 
 
+  // var d = new Date();
+  // var hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
   // className={style.ligne}
   const [checked, setChecked] = useState(false)
   const test = (t) => {
@@ -26,6 +28,8 @@ function Chest({ nameChest}) {
           <div className={style.one}>
             <h5 className={style.Boss2}>Hello Friend</h5>
             <p className={style.Boss2}>{nameChest.name}</p>
+            {/* <p className={style.Boss2}>{hours}</p> */}
+
           </div>
         </div>
 

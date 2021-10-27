@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Chest from '../Chest/chest.jsx'
 
-function ListChest({ envoieTabName1, tab }) {
+function ListChest({ tab }) {
 
-
-
-
-    const envoieTabName2 = (e) => {
-        envoieTabName1(e)
-    }
-
-    const listItems = tab.map((nametask) =>
+    const listItems = tab.map((nametask , index) =>
         <Chest
+        key = {index}
         nameChest ={nametask}
         ></Chest>
     );
