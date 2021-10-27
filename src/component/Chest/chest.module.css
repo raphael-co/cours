@@ -19,7 +19,7 @@
     border-radius: 15px;
     margin-bottom: 1%;
     height: 10%;
-    width:30%;
+    min-width:50%;
     border: solid 1px;
     background:transparent;
     box-shadow:  2px 5px black;

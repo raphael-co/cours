@@ -6,7 +6,6 @@ function Chekbox({test1, value}) {
 
     const test3=(e)=>{
         test1(e.target.checked);
-        // console.log(value)
     }
     return (
         <div className={style.two}>

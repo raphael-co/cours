@@ -4,10 +4,6 @@ import Checkbox from '../Checkbox/chekbox.jsx'
 
 function Chest({ nameChest }) {
 
-
-  // var d = new Date();
-  // var hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-  // className={style.ligne}
   const [checked, setChecked] = useState(false)
   const test = (t) => {
     setChecked(t)

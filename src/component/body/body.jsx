@@ -23,11 +23,12 @@ function Body() {
         "name": name
     }
 
-    const tableau = tabName
 
     const ActionNameEnvoie = (t) => {
         setActionName(t)
         if (name.length >= 2) {
+            const tableau = [...tabName]
+
             tableau.push(jsonName)
             setTabName(tableau)
         } else {
@@ -38,7 +39,7 @@ function Body() {
     return (
         <div className={style.body}>
             <BarAdd
-            // eslint-disable-next-line
+                // eslint-disable-next-line
                 ActionNameEnvoie1={ActionNameEnvoie}
                 value={actionName}
                 envoie1={envoie}
@@ -47,9 +48,9 @@ function Body() {
             />
             <br />
             <ListChest
-            // eslint-disable-next-line
-            envoieTabName1={envoieTabName}
-            tab={tabName}
+                // eslint-disable-next-line
+                envoieTabName1={envoieTabName}
+                tab={tabName}
             />
         </div>
     );
