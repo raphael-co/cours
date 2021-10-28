@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from './header.module.css'
 import Heure from '../heure/heure.jsx'
 
-function Header() {
+function Header(namehea) {
 
 
   const [time, setTime] = useState("")
@@ -15,12 +15,12 @@ function Header() {
     setTime(hours)
   }
   setInterval(hoursTime, 1000);
-  console.log(time)
+  // console.log(time)
 
   const Times = (t) => {
     setTime(t)
   }
-
+  const HeaderName = namehea.namehea.Nameheader
   return (
 
 
@@ -36,7 +36,7 @@ function Header() {
 
       <div className={style.box}>
         <div className={style.one}>
-          <p className={style.Boss2}>Hello Friend</p>
+          <p className={style.Boss2}>test</p>
         </div>
         <div className={style.two}>
           <Heure
@@ -45,7 +45,7 @@ function Header() {
           ></Heure>
         </div>
         <div className={style.three}>
-          <div className={style.Boss}><p>Boss</p></div>
+          <div className={style.Boss}><p>{HeaderName}</p></div>
         </div>
       </div>
     </header>

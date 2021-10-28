@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
 // import Hello from './component/hello.jsx'
-import Header from './component/Header/header.jsx'
-import Footer from './component/Footer/footer.jsx'
-import Body from './component/body/body.jsx'
+import Home from './component/home/home.jsx'
+import Login from './component/Login/loginn/login.jsx'
+import React, { useState } from "react";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 
@@ -11,11 +13,45 @@ import Body from './component/body/body.jsx'
 
 
 function App() {
+  const [headerName, setHeaderName] = useState([])
+  const [ActionNameLogEnvoie, setActionNameLogEnvoie] = useState('')
+  const [nameLogin, setNameLogin] = useState('')
+
+
+  const logName = (t) => {
+    setNameLogin(t)
+  }
+  const ButtonNameLogEnvoie = (t) => {
+    setActionNameLogEnvoie(t)
+    if (nameLogin.length >= 2) {
+      const tableau = [...headerName]
+      tableau.push(nameLogin)
+      setHeaderName(tableau)
+    } else {
+      console.log("encore header")
+    }
+  }
+  // console.log(headerName[0])
+
   return (
     <div className="App">
-        <Header></Header>
-        <Body></Body>
-        <Footer></Footer>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Login
+              logName1={logName}
+              value={nameLogin}
+              action={ActionNameLogEnvoie}
+              ButtonNameLogEnvoie1={ButtonNameLogEnvoie}
+            ></Login>
+          </Route>
+          <Route exact path="/home">
+            <Home
+            Nameheader={headerName[0]}
+            ></Home>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

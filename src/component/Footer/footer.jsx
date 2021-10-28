@@ -4,7 +4,7 @@ import DATA from '../assets/json/info.js'
 
 export default function Footer(backgroundColor, ...props) {
 
-    console.log(DATA)
+    // console.log(DATA)
     return (
 
 

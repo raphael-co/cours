@@ -9,7 +9,7 @@
       color:white;
       background-color: #323232; 
       text-align: center;
-      width: 75px;
+      min-width: 10%;
       border-radius: 23%;
     
     }
@@ -18,7 +18,7 @@
       color:#323232;
       background-color: #399992; 
       text-align: center;
-      width: 75px;
+      min-width: 10%;
       border-radius: 23%;
     
     }

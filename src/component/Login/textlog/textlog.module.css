@@ -1,0 +1,13 @@
+.input{
+    padding: 5%;
+    margin-top: 7%;
+    border: 1px dashed #323232;
+    width:80%;
+    outline: none;
+}
+.input:focus{
+    padding: 5%;
+    margin-top: 7%;
+    border: 1px dashed #399992;
+    width:80%;
+}
