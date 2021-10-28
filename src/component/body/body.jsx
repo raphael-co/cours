@@ -12,6 +12,8 @@ function Body() {
     const [actionName, setActionName] = useState('')
     const [tabName, setTabName] = useState([])
 
+    console.log(name)
+
     const envoie = (t) => {
         setName(t)
     }

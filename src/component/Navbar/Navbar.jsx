@@ -3,19 +3,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line 
 // import { SidebarData } from './SideMenuData';
+import style from './Navbar.module.css'
 
-function Navbar() {
-  const [sidebar, setSidebar] = useState(false);
-// eslint-disable-next-line 
-  const showSidebar = () => setSidebar(!sidebar);
-
+function Navbar(value) {
+  
   return (
     <>
-        <div className='navbar'>
+        <nav className={value.value ? `${style.navmenuactive}` : `${style.navmenu}`}>
 
-        </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-        
+          <div><p>test</p></div>
+          
+       
         </nav>
     </>
   );

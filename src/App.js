@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 function App() {
-  const [headerName, setHeaderName] = useState([])
+  const [headerName, setHeaderName] = useState('')
   const [ActionNameLogEnvoie, setActionNameLogEnvoie] = useState('')
   const [nameLogin, setNameLogin] = useState('')
 
@@ -24,9 +24,10 @@ function App() {
   const ButtonNameLogEnvoie = (t) => {
     setActionNameLogEnvoie(t)
     if (nameLogin.length >= 2) {
-      const tableau = [...headerName]
-      tableau.push(nameLogin)
-      setHeaderName(tableau)
+      const zoubida = nameLogin
+      // const tableau = [...headerName]
+      // tableau.push(nameLogin)
+      setHeaderName(zoubida)
     } else {
       console.log("encore header")
     }
@@ -47,7 +48,7 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home
-            Nameheader={headerName[0]}
+            Nameheader={headerName}
             ></Home>
           </Route>
         </Switch>

@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import style from './header.module.css'
 import Heure from '../heure/heure.jsx'
 
-function Header(namehea) {
+function Header({showSidebarbut,namehea}) {
 
 
   const [time, setTime] = useState("")
+
+
+  const showSidebarbuton = () => {
+    showSidebarbut()
+  }
+
 
 
 
@@ -20,7 +26,6 @@ function Header(namehea) {
   const Times = (t) => {
     setTime(t)
   }
-  const HeaderName = namehea.namehea.Nameheader
   return (
 
 
@@ -45,7 +50,7 @@ function Header(namehea) {
           ></Heure>
         </div>
         <div className={style.three}>
-          <div className={style.Boss}><p>{HeaderName}</p></div>
+          <div className={style.Boss} onClick={showSidebarbuton}><p>{namehea.Nameheader}</p></div>
         </div>
       </div>
     </header>
