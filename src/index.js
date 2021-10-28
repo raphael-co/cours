@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Props from './test/props.jsx'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

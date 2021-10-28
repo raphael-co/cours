@@ -1,14 +1,24 @@
 import { useRef } from 'react';
+import { useState } from 'react';
+
 import { useDrag, useDrop } from 'react-dnd';
 import { ItemTypes } from './ItemTypes';
-const style = {
-    border: '1px dashed gray',
-    padding: '0.5rem 1rem',
-    marginBottom: '.5rem',
-    backgroundColor: 'white',
-    cursor: 'move',
-};
-export const Card = ({ id, name, index, moveCard }) => {
+import style from './chest.module.css'
+import Checkbox from '../Checkbox/chekbox.jsx'
+
+// const style = {
+//     border: '1px dashed gray',
+//     padding: '0.5rem 1rem',
+//     marginBottom: '.5rem',
+//     backgroundColor: 'white',
+//     cursor: 'move',
+// };
+export const Card = ({ id,name, index, moveCard }) => {
+
+    const [checked, setChecked] = useState(false)
+    const test = (t) => {
+        setChecked(t)
+    }
     const ref = useRef(null);
     const [{ handlerId }, drop] = useDrop({
         accept: ItemTypes.CARD,
@@ -64,9 +74,35 @@ export const Card = ({ id, name, index, moveCard }) => {
             isDragging: monitor.isDragging(),
         }),
     });
+    // eslint-disable-next-line
     const opacity = isDragging ? 0 : 1;
     drag(drop(ref));
-    return (<div ref={ref} style={{ ...style, opacity }} data-handler-id={handlerId}>
-			{name}
-		</div>);
+    return (
+
+        <div id={id} ref={ref} className={style.body} data-handler-id={handlerId}>
+
+
+            {/* className={checked == false ? `${style.ligne}` : ''} */}
+            {/* <div className={style.ligne `${checked == false? `${style.ligne}` : ""}`}></div> */}
+            <div className={checked === false ? `${style.ligne}` : `${style.ligneTrue}`}>
+                <div className={style.box}>
+                    {/* <div className={style.two}> <input className={style.Boss} type="checkbox"></input></div> */}
+                    <Checkbox
+                        test1={test}
+                        value={checked}
+                    />
+                    <div className={style.one}>
+                        <h5 className={style.Boss2}>Hello Friend</h5>
+                        <p className={style.Boss2}>{name}</p>
+                        <p className={style.Boss2}>{id}</p>
+                        {/* <p className={style.Boss2}>{hours}</p> */}
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+
+
 };

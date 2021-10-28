@@ -1,0 +1,51 @@
+.body {
+    /* min-height: 80vh; */
+    display: flex;
+    justify-content: center;
+    cursor: 'move',
+  }
+  
+  .Boss2 {
+    padding-top: 3%;
+    padding-left: 10%;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+  
+  .ligne {
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 1%;
+    height: 10%;
+    min-width: 30%;
+    border: solid 1px;
+    background: transparent;
+    box-shadow: 2px 5px black;
+  }
+  
+  .ligneTrue {
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 1%;
+    height: 10%;
+    min-width: 30%;
+    border: solid 1px;
+    background: transparent;
+    box-shadow: 2px 5px #399992;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .one {
+    flex: 1 5 auto;
+  }
+  
+  .two {
+    margin-top: 4%;
+    flex: 1 1 auto;
+  }
