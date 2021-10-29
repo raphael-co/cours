@@ -27,15 +27,10 @@ function Body() {
     const envoieTabName = (t) => {
         setTabName(t)
     }
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-      }
-    
-    const test = getRandomInt(1000)
 
     const jsonName = {
         "name": name,
-        "id":test
+        "id": ""
 
     }
 
@@ -44,7 +39,8 @@ function Body() {
         setActionName(t)
         if (name.length >= 2) {
             const tableau = [...tabName]
-
+            // const 
+            jsonName.id = tableau.length
             tableau.push(jsonName)
             setTabName(tableau)
         } else {
